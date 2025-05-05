@@ -4,7 +4,3 @@ resources:
   - ./nginx/namespace.yaml
   - ./nginx/deployment.yaml
   - ./nginx/service.yaml
-  - ./ubuntu/namespace.yaml
-  - ./ubuntu/deployment.yaml
-  - ./ubuntu/service.yaml
-
