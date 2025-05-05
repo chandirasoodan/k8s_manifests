@@ -1,0 +1,9 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: ubuntu-service
+  namespace: ubuntu
+spec:
+  selector:
+    app: ubuntu
+  type: ClusterIP
