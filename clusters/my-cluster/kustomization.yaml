@@ -1,4 +1,2 @@
 resources:
-  - ./nginx/deployment.yaml
-  - ./nginx/service.yaml
-  - ./nginx/namespace.yaml
+  - ./blue
