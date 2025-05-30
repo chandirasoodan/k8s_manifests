@@ -1,2 +1,14 @@
+namePrefix: green-
 resources:
-- namespace.yaml
+  - ../nginx
+  - namespace.yaml
+patches:
+  - target:
+      group: apps
+      version: v1
+      kind: Deployment
+      name: ngixn-deployment
+    patch: |
+      - op: replace
+        path: /spec/replicas
+        value: 1
