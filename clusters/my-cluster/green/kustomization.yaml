@@ -17,5 +17,5 @@ patches:
       name: ngixn-service
     patch: |
       - op: replace
-        path: /spec/ports/nodePort
+        path: /spec/ports/0/nodePort
         value: 30030
