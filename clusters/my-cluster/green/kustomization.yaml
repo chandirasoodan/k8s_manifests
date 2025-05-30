@@ -14,8 +14,8 @@ patches:
   - target:
       version: v1
       kind: Service
-      name: ngixn-service
+      name: nginx-service
     patch: |
       - op: replace
-        path: /spec/ports/3/nodePort
+        path: /spec/ports/0/nodePort
         value: 30030
