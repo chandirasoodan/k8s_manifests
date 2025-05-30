@@ -1,7 +1,7 @@
 namePrefix: blue-
-namespace: nginx
 resources:
   - ./nginx
+  - namespace.yaml
 patches:
   - target:
       group: apps
