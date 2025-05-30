@@ -8,7 +8,7 @@ resources:
 patches:
   - target:
       group: apps
-      version: v2
+      version: v1
       kind: Deployment
       name: ngixn-deployment
     patch: |
