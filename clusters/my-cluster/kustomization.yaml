@@ -4,3 +4,14 @@ resources:
   - ./nginx/namespace.yaml
   - ./nginx/deployment.yaml
   - ./nginx/service.yaml
+
+patches:
+  - target:
+      group: apps/v1
+      version: v2
+      kind: Deployment
+      name: ngixn-deployment
+    patch: |-
+      - op: replace
+        replicas: 2
+        value: 1
