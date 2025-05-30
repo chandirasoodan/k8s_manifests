@@ -13,5 +13,5 @@ patches:
       name: ngixn-deployment
     patch: |
       - op: replace
-        replicas: 2
-        value: 1
+        path: /spec/replicas
+        value: 2
