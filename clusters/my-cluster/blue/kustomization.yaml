@@ -1,10 +1,9 @@
+namePrefix: blue-
+namespace: nginx
 apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
 resources:
-  - ./nginx/namespace.yaml
-  - ./nginx/deployment.yaml
-  - ./nginx/service.yaml
-
+  - ./nginx/
 patches:
   - target:
       group: apps
@@ -14,4 +13,4 @@ patches:
     patch: |
       - op: replace
         path: /spec/replicas
-        value: 3
+        value: 1
