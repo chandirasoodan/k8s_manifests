@@ -7,11 +7,11 @@ resources:
 
 patches:
   - target:
-      group: apps/v1
+      group: apps
       version: v2
       kind: Deployment
       name: ngixn-deployment
-    patch: |-
+    patch: |
       - op: replace
         replicas: 2
         value: 1
