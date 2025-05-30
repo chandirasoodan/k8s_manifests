@@ -1,7 +1,6 @@
 namePrefix: green-
 resources:
   - ../nginx
-  - namespace.yaml
 patches:
   - target:
       group: apps
@@ -12,3 +11,11 @@ patches:
       - op: replace
         path: /spec/replicas
         value: 1
+  - target:
+      version: v1
+      kind: Service
+      name: ngixn-service
+    patch: |
+      - op: replace
+        path: /spec/ports/nodePort
+        value: 30030
