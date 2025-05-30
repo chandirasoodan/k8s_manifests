@@ -1,6 +1,6 @@
 namePrefix: blue-
 resources:
-  - ./nginx
+  - ../nginx
   - namespace.yaml
 patches:
   - target:
