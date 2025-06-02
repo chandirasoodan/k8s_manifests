@@ -16,4 +16,4 @@ spec:
           service:
             name: blue-nginx-service
             port:
-              number: 30007
+              number: 80
