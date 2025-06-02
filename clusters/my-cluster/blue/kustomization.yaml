@@ -1,6 +1,7 @@
 namePrefix: blue-
 resources:
   - ../nginx
+  - ../ingress.yaml
   - namespace.yaml
 patches:
   - target:
