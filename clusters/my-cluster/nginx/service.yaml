@@ -9,6 +9,7 @@ spec:
   ports:
   - protocol: TCP
     port: 80
-    targetPort: 80 
-  type: ClusterIP
-  
+    nodePort: 30007  # Exposes the service on port 30007
+  type: NodePort
+
+
