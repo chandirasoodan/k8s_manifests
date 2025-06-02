@@ -11,11 +11,11 @@ patches:
       - op: replace
         path: /spec/replicas
         value: 1
-  - target:
-      version: v1
-      kind: Service
-      name: nginx-service
-    patch: |
-      - op: replace
-        path: /spec/ports/0/nodePort
-        value: 30030
+  # - target:
+  #     version: v1
+  #     kind: Service
+  #     name: nginx-service
+  #   patch: |
+  #     - op: replace
+  #       path: /spec/ports/0/nodePort
+  #       value: 30030
