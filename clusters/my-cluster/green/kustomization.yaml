@@ -11,6 +11,15 @@ patches:
       - op: replace
         path: /spec/replicas
         value: 1
+
+      - op: replace
+        path: /spec/template/metadata/labels/app
+        value: green-nginx
+      
+      - op: replace
+        path: /spec/selector/matchLabels/app
+        value: green-nginx
+        
   - target:
       version: v1
       kind: Service
@@ -19,11 +28,3 @@ patches:
       - op: replace
         path: /spec/ports/0/nodePort
         value: 30030
-        
-      - op: replace
-        path: /spec/template/metadata/labels/app
-        value: green-nginx
-      
-      - op: replace
-        path: /spec/selector/matchLabels/app
-        value: green-nginx
