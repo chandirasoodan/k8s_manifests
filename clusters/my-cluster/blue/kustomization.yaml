@@ -13,3 +13,11 @@ patches:
       - op: replace
         path: /spec/replicas
         value: 1
+      
+      - op: replace
+        path: /spec/template/metadata/labels/app
+        value: blue-nginx
+      
+      - op: replace
+        path: /spec/selector/matchLabels/app
+        value: blue-nginx
