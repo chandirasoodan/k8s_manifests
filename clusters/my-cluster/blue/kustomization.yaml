@@ -21,3 +21,12 @@ patches:
       - op: replace
         path: /spec/selector/matchLabels/app
         value: blue-nginx
+    
+  - target:
+      version: v1
+      kind: Service
+      name: nginx-service
+    patch: |     
+      - op: replace
+        path: /spec/selector/app
+        value: green-nginx
