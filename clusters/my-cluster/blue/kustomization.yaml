@@ -1,5 +1,5 @@
 namePrefix: blue-
-namespace: test
+namespace: nginx
 resources:
   - ../nginx
   - ../ingress.yaml
