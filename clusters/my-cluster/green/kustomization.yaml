@@ -1,4 +1,7 @@
 namePrefix: green-
+metadata:
+  name: green-workloads
+  namespace: flux-system
 resources:
   - ../nginx
 patches:
