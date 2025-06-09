@@ -1,7 +1,4 @@
 namePrefix: blue-
-metadata:
-  name: blue-workloads
-  namespace: flux-system
 resources:
   - ../nginx
   - ../ingress.yaml
